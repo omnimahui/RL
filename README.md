@@ -50,15 +50,7 @@ RL_moneyflow/
 pip install torch pandas numpy
 ```
 
-### 1. Quick Test
-Run a quick test to verify your setup:
-
-```bash
-cd RL_moneyflow
-python test_hyperopt.py
-```
-
-### 2. Hyperparameter Optimization
+### 1. Hyperparameter Optimization
 Find the best parameters for your dataset:
 
 ```bash
@@ -72,14 +64,14 @@ python hyperopt.py --workers 4
 python hyperopt.py --sequential
 ```
 
-### 3. Train Models
+### 2. Train Models
 Train the DQN agent with optimized parameters:
 
 ```bash
 python train.py --train
 ```
 
-### 4. Evaluate Performance
+### 3. Evaluate Performance
 Assess the trained model's performance:
 
 ```bash
@@ -135,14 +127,6 @@ The system optimizes for:
 3. **Max Drawdown**: Risk management metric
 
 ## 🔧 Advanced Usage
-
-### Parallel Training
-
-For faster training on multiple stocks:
-
-```bash
-python train_parallel.py --workers 8
-```
 
 ### Custom Metrics
 
@@ -271,5 +255,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Hyperopt community for optimization techniques
 
 ---
+
 
 **Note**: This system is for educational and research purposes. Always validate trading strategies thoroughly before using with real capital.
